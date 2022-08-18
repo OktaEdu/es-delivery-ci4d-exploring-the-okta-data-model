@@ -1,5 +1,14 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#1 - Lab X.1 Put Lab Title Here",
-  "steps": []
+  "title": "#1 - Lab 4.1 Get an API token and set up the Postman Environment",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Get an API token and set up the Postman Environment\n\n🎯 Objective: \n\n⏱️ Duration: "
+    },
+    {
+      "title": "Checkpoint",
+      "description": "## ✅ Checkpoint\n\nAt this point, \n"
+    }
+  ]
 }

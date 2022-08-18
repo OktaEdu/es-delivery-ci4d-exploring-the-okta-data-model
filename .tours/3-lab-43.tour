@@ -1,0 +1,14 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#3 Lab 4.3 Modify an Okta User via the Users API",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Modify an Okta User via the Users API\n\n🎯 Objective:\n\n⏱️ Duration:"
+    },
+    {
+      "title": "Lab Checkpoint",
+      "description": "## ✅ Checkpoint\n\nAt this point, \n"
+    }
+  ]
+}
