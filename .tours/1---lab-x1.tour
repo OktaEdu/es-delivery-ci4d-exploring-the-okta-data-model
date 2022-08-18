@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#1 - Lab 4.1 Get an API token and set up the Postman Environment",
+  "title": "#1 - Lab 4.1 Get an API token and Set Up the Postman Environment",
   "steps": [
     {
       "title": "Lab Overview",

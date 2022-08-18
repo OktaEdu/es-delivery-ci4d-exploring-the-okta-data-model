@@ -4,7 +4,7 @@
 
 This repo contains everything you need to complete the labs in this module:
 
-- Lab 4-1: Get an API token and set up the Postman Environment
+- Lab 4-1: Get an API token and Set Up the Postman Environment
 - Lab 4-2: Create an Okta User via the Users API
 - Lab 4-3: Modify an Okta User via the Users API
 
