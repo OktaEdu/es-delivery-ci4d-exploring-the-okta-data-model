@@ -4,11 +4,61 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Get an API token and set up the Postman Environment\n\n🎯 Objective: \n\n⏱️ Duration: "
+      "description": "# Lab 4.1: Get an API token and set up the Postman Environment\n\n🎯 Objective: Create an Okta service account for administrative tasks and associations with API tokens. Set up the Postman environment to make API calls to Okta.\n\n⏱️ Duration: 15 min"
+    },
+    {
+      "title": "Create an Okta Service Account",
+      "description": "## Create an Okta Service Account\n\n1. Ensure you are signed in as your Super Admin account, `oktatraining`.\n\n2. In the Admin Dashboard, select `Directory` > `People`.\n\n3. Click the `Add Person` button.\n\n4. Enter the following details:\n\n\n|**Field**                                  | **Value**                               |\n|:-------------------------------------------|:-----------------------------------------|\n| First name                                |  `Okta`                                |\n| Last name                                 |  `Service`                               |\n| Username                                  |  `okta.service@oktaice.com`                 |\n| Primary email                             |  `okta.service@oktaice.com`                 |\n|Activation | `Activate now`|\n| I will set the password                   |`CHECKED`                       |\n| Enter password                            |  `Tra!nme4321`                        |\n| User must change password on first login  |  `UNCHECKED`    |\n\nLast, click the `Save` button."
+    },
+    {
+      "title": "Assign Administrator Permissions",
+      "description": "## Assign Administrator Permissions\n\n1. Navigate to `Security` > `Administrators`\n\n2. Click `Add Administrator`\n\n3. In the `Admin` field, type and select the user `Okta Service`\n\n4. In the `Role` field, select `Super Administrator`\n\n5. Click `Save Changes`"
+    },
+    {
+      "title": "Sign In to Service Account",
+      "description": "## Sign In to Service Account\n\n\n1. Log out of the **oktatraining** account.\n\n2. Log back in with the credentials: `okta.service@oktaice.com` / `Tra!nme4321`\n\n3. Click on the `Admin` button."
+    },
+    {
+      "title": "Create an API Token",
+      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`.\n\n3. On the `Tokens` tab, click `Create Token`.\n\n4. Enter `Postman` as the token name and click `Create Token`.\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value in the text file here.\n\n7. Click here to save the text file."
+    },
+    {
+      "file": "postman-api-token.txt",
+      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`.\n\n3. On the `Tokens` tab, click `Create Token`.\n\n4. Enter `Postman` as the token name and click `Create Token`.\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value into the `postman-api-token.txt` file that is open above.\n\n7. Click [here](command:workbench.action.files.save) to save the text file. \n",
+      "line": 2
+    },
+    {
+      "title": "Import the Postman Environment",
+      "description": "## Import the Postman Environment\n\n1. In the VM, launch the Postman app (an orange circular icon).\n\n2. Click the `Import` button on the top left of the application.\n\n3. Click `Link`.\n\n4. Paste the URL `https://developer.okta.com/docs/api/postman/example.oktapreview.com.environment`\n\n5. Click `Continue` and then `Import` to confirm."
+    },
+    {
+      "title": "Rename the Postman Environment",
+      "description": "## ✅ Checkpoint\n\nAt this point, Postman is now configured to make API calls to Okta. In the next lab, you will import the Okta Users API Collection. A collection is a group of saved API requests. "
+    },
+    {
+      "title": "Configure the Postman Environment Variables",
+      "description": "## ✅ Checkpoint\n\nAt this point, Postman is now configured to make API calls to Okta. In the next lab, you will import the Okta Users API Collection. A collection is a group of saved API requests. "
+    },
+    {
+      "title": "Configure the `url` Environment Variable",
+      "description": "## Configure the `url` Environment Variable\n\nUpdate the `CURRENT VALUE` of `url` to your Okta org's url, e.g. `http://oktaice###.oktapreview.com`"
+    },
+    {
+      "file": "postman-api-token.txt",
+      "description": "## Configure the `apikey` Environment Variable\n\nCopy the API Token from the text file opened above and paste it into the `CURRENT VALUE` column of the `apikey` variable",
+      "line": 2
+    },
+    {
+      "title": "Configure the `email-suffix` Environment Variable",
+      "description": "## Configure the `email-suffix` Environment Variable\n\nEnter `okta-ice.com` in in the `CURRENT VALUE` column for the `email-suffix` variable."
+    },
+    {
+      "title": "Persist and Save All Environment Variables",
+      "description": "## Persist and Save all Environment Variables\n\n1. Click `Persist All`\n\n2. Click `Save`\n\n3. You may now close the environment variable tab."
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅ Checkpoint\n\nAt this point, \n"
+      "description": "## ✅ Checkpoint\n\nAt this point, Postman is now configured to make API calls to Okta. In the next lab, you will import the Okta Users API Collection. A collection is a group of saved API requests. "
     }
   ]
 }
