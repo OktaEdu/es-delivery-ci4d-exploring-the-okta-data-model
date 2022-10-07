@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "# Lab 4.1: Get an API token and set up the Postman Environment\n\n🎯 Objective: Create an Okta service account for administrative tasks and associations with API tokens. Set up the Postman environment to make API calls to Okta.\n\n⏱️ Duration: 15 min"
+      "description": "# Lab 4.1: Get an API token and set up the Postman Environment\n\n🎯 Objective: Create an Okta service account for administrative tasks and associations with API tokens. Set up the Postman environment to make API requests to Okta.\n\n⏱️ Duration: 15 min"
     },
     {
       "title": "Create an Okta Service Account",
@@ -16,15 +16,11 @@
     },
     {
       "title": "Sign In to Service Account",
-      "description": "## Sign In to Service Account\n\n\n1. Log out of the **oktatraining** account.\n\n2. Log back in with the credentials: `okta.service@oktaice.com` / `Tra!nme4321`\n\n3. Click on the `Admin` button."
-    },
-    {
-      "title": "Create an API Token",
-      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`.\n\n3. On the `Tokens` tab, click `Create Token`.\n\n4. Enter `Postman` as the token name and click `Create Token`.\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value in the text file here.\n\n7. Click here to save the text file."
+      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`\n\n3. On the `Tokens` tab, click `Create Token`\n\n4. Enter `Postman` as the token name and click `Create Token`\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value into the `postman-api-token.txt` file that is open above.\n\n7. Click [here](command:workbench.action.files.save) to save the text file. \n"
     },
     {
       "file": "postman-api-token.txt",
-      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`.\n\n3. On the `Tokens` tab, click `Create Token`.\n\n4. Enter `Postman` as the token name and click `Create Token`.\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value into the `postman-api-token.txt` file that is open above.\n\n7. Click [here](command:workbench.action.files.save) to save the text file. \n",
+      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`\n\n3. On the `Tokens` tab, click `Create Token`\n\n4. Enter `Postman` as the token name and click `Create Token`\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value into the `postman-api-token.txt` file that is open above.\n\n7. Click [here](command:workbench.action.files.save) to save the text file. \n",
       "line": 2
     },
     {

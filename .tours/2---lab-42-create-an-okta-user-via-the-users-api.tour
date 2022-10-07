@@ -4,11 +4,47 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Create an Okta User via the Users API\n\n🎯 Objective:\n\n⏱️ Duration:"
+      "description": "## Lab 4.2: Create an Okta User via the Users API\n\n🎯 Objective: Import the Okta Users API collection into Postman and create an Okta user via API request.\n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisite: Lab 4.1"
+    },
+    {
+      "title": "Import the Okta Users API Collection Into Postman",
+      "description": "## Import the Okta Users API Collection Into Postman\n\n1. Within the Chrome browser in your VM, visit https://developer.okta.com/docs/reference/api/users/\n\n2. Click `Run in Postman`\n\n3. Click `Postman for Windows`\n\n4. If prompted, click `Open Postman`\n\n5. In the **Import Collection** window that opens in Postman, choose `My Workspace`\n\nYou should now see the **Users (Okta API)** collection under **Collections**"
+    },
+    {
+      "title": "Open the Create Activated User with Password Request",
+      "description": "## Open the `Create Activated User with Password` Request\n\n1. Click on the **Users (Okta API)** collection to expand it.\n\n2. Click on the **Create Users** subfolder to expand it.\n\n3. Click on the **Create Activated User with Password** request to open it in a tab."
+    },
+    {
+      "title": "Examine the Request Params",
+      "description": "## Examine the Request Params\n\nLet's take a moment to examine this request and its parameters. Ensure you are on the `params` tab.\n\n1. First hover over the `{{url}}` environment variable at the top of the request window. Verify that you see your Okta URL.\n\n2. Next, look at the URI (relative to our base Okta URL) of the request endpoint: `/api/v1/users` This is the relative URI for all requests in this collection, though some requests may require additional URI parameters or query strings.\n\n2. Observe that this request has a boolean `activate` URI parameter. When `activate` is set to true, this request will create a user with the status of `ACTIVE`\n\n3. Finally, notice that this request uses the HTTP `POST` method. This method is used when creating a new web resource, in this case, an Okta User."
+    },
+    {
+      "title": "Examine the Request Header",
+      "description": "## Examine Request Header\n\n1. Click on the `Headers` tab.\n\n2. Notice that your API Token is being passed via the `Authorization` header via the `{{apikey}}` environment variable.\n\n3. The `Accept` header communicates what type of data our client (Postman) can accept back in a response from Okta. Here, we accept `application/json` data.\n\n4. The `Content-Type` header communicates the type of data we are sending in our request to Okta. This is also `application/json` data."
+    },
+    {
+      "title": "Examine the Request Body",
+      "description": "## Examine the Request Body\n\n1. Click on the `Body` tab.\n\n2. Here you will see `JSON` formatted data that represents a user. In this case, the `User` object is comprised of a `Profile` object and a `Credentials` object.\n\n3. The `Profile` object consists of the four User profile attributes that are required by default on Okta: `firstName`, `lastName`, `email`, and `login` (username).\n\n4. The `Credentials` object consists of a `password`."
+    },
+    {
+      "title": "Update the Request Body",
+      "description": "## Update the Request Body\n\nThe `Profile` object in this request only includes the four profile attributes that are required by default on Okta. We can include additional optional attributes as well!\n\nWe're going to update the `Profile` object's default attributes and add some optional ones as well. The `Credentials` object will be left unchanged:\n\n```json\n{\n  \"profile\": {\n  \"firstName\": \"Samus\",\n  \"lastName\": \"Aran\",\n  \"email\": \"samus.aran@{{email-suffix}}\",\n  \"login\": \"samus.aran@{{email-suffix}}\",\n  \"nickName\": \"Sammy\",\n  \"title\": \"Senior Security Engineer\",\n  \"department\": \"IT\",\n  \"division\": \"Colony K-21\"\n},\n\"credentials\": {\n    \"password\" : { \"value\": \"{{password}}\" }\n  }\n}\n```\n\n(You can ignore the **Insert Code** link above and simply copy and paste the JSON into the request body in Postman)"
+    },
+    {
+      "title": "Update the `password` Environment Variable",
+      "description": "\n## Set the `password` Environment Variable\n\n1. Click the eyeball icon to the right of your Postman environment drop down.\n\n2. Click `Edit` \n\n3. Scroll down to the `password` variable and enter `Tra!nme4321` in the `CURRENT VALUE` column.\n\n4. Click `Persist All` and then `Save`\n\n5. Close the Environment variable tab and return to the **Create Activated User with Password** request tab."
+    },
+    {
+      "title": "Send the Request",
+      "description": "## Send the Request\n\n1. Click `Send`\n\n2. Verify that you get a `200 OK` response (visible at the bottom of Postman). If not, go back and ensure you entered the JSON in your request body correctly and that all of your environment variables have been set correctly."
+    },
+    {
+      "title": "Examine the Response",
+      "description": "## Examine the Response\n\n1. Click on the `Body` tab in the Response area (bottom half of the Postman window).\n\n2. Notice that the response we get back from Okta is `JSON`\n\n3. The first entry is the User's unique `id`.\n\n4. The user has a status of `ACTIVE`\n\n5. If you scroll down, you will find the `Profile` object you specified.\n\n6. You will also see a `Credentials` object, but the password is not echoed back.\n\n7. Finally, the `_links` section exposes additional Okta Users API endpoints relevant to this user's lifecycle.\n"
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅ Checkpoint\n\nAt this point, \n"
+      "description": "## ✅ Checkpoint\n\nAt this point, you have created an activated user with a password using the Users API. This has allowed you to see how a User is represented in Okta."
     }
   ]
 }
