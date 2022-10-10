@@ -24,7 +24,7 @@
     },
     {
       "title": "Create the Request Body JSON Payload",
-      "description": "## Create the Request Body JSON Payload\n\nIn order to update the User, we'll need to craft a JSON payload that specifies what profile attributes need to be updated. \n\nIn this case, we can imagine that the user's `lastName` needs to be updated. Since we are performing a partial update, we only need to specify this attribute in the Profile object of our JSON payload:\n\n```json\n{\n  \"profile\": {\n  \"lastName\": \"Nara\"\n}\n}\n\nClick `Save` and then `Send` to issue the request."
+      "description": "## Create the Request Body JSON Payload\n\nIn order to update the User, we'll need to craft a JSON payload that specifies what profile attributes need to be updated. \n\nIn this case, we can imagine that the user's `lastName` needs to be updated. Since we are performing a partial update, we only need to specify this attribute in the Profile object of our JSON payload:\n\n```json\n{\n  \"profile\": {\n  \"lastName\": \"Nara\"\n}\n}\n```\n\nClick `Save` and then `Send` to issue the request."
     },
     {
       "title": "Examine the Response Body",
