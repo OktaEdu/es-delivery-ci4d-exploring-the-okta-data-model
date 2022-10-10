@@ -4,11 +4,35 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Modify an Okta User via the Users API\n\n🎯 Objective:\n\n⏱️ Duration:"
+      "description": "## Lab 4.3: Update an Okta User Via the Users API\n\n🎯 Objective: Update an existing Okta User using a request from the Okta Users API collection in Postman.\n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisite: Lab 4.2"
+    },
+    {
+      "title": "Access Okta's Users API Documentation",
+      "description": "## Access Okta's Users API Documentation\n\nAlthough the `Users (Okta API)` collection does not have a request to perform updates on a User's profile, the endpoint is documented here: https://developer.okta.com/docs/reference/api/users/#update-user\n\nWe'll use this documentation to craft our request in Postman. \n\nFrom the documentation, we see that the endpoint we need to issue our request to is `/api/v1/users/{{userId}}` and that we should use the `POST` method for a partial update. A partial update means we only provide the data for the profile attributes we want to update.\n\nAlternatively, the `PUT` method can be used for a complete update. This would mean that any attributes that are not specified in the request body will be deleted from the user's profile.\n\nFor our purposes, we will use the `POST` method for a partial update."
+    },
+    {
+      "title": "Create the Request",
+      "description": "## Create the Request\n\n1. In Postman, click `New` or hold `CTRL` + `N`\n\n2. In the window that pops up, click `HTTP REQUEST`\n\n3. Click the drop down menu and change the HTTP method from `GET` to `POST`\n\n4. For the request URL, enter `{{url}}/api/v1/users/{{userId}}`\n\n5. Click `Save`\n\n6. Name this request `Update User`\n\n7. Ensure the `Users (Okta API)` collection is selected\n\n8. Click `Save`"
+    },
+    {
+      "title": "Set the Authorization Header",
+      "description": "## Set the Authorization Header\n\n1. Click on `Headers`\n\n2. In the next blank entry, enter `Authorization` in the `Key` column\n\n3. Enter `SSWS {{apikey}}` in the `Value` column\n\n4. Click `Save`"
+    },
+    {
+      "title": "Set the Request Body to JSON",
+      "description": "## Set the Request Body to JSON\n\n1. Click on the `Body` tab of the request.\n\n2. Click the `raw` radio button\n\n3. Change the drop down value from `Text` to `JSON`\n\n4. Click `Save`"
+    },
+    {
+      "title": "Create the Request Body JSON Payload",
+      "description": "## Create the Request Body JSON Payload\n\nIn order to update the User, we'll need to craft a JSON payload that specifies what profile attributes need to be updated. \n\nIn this case, we can imagine that the user's `lastName` needs to be updated. Since we are performing a partial update, we only need to specify this attribute in the Profile object of our JSON payload:\n\n```json\n{\n  \"profile\": {\n  \"lastName\": \"Nara\"\n}\n}\n\nClick `Save` and then `Send` to issue the request."
+    },
+    {
+      "title": "Examine the Response Body",
+      "description": "## Examine the Response Body\n\n1. You should get a `200 OK` response. If not, ensure you have followed all the prerequisite steps correctly, including setting the `userId` environment variable in `Lab 4.2`\n\n2. Locate the Profile object within the JSON in the Response body.\n\n3. Notice that the `lastName` is now updated, but all other profile attributes remain the same."
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅ Checkpoint\n\nAt this point, \n"
+      "description": "## ✅ Checkpoint\n\nYou now have an understanding of how a partial update of a user's profile is performed by the Users API, which is used by Okta's Management SDKs."
     }
   ]
 }

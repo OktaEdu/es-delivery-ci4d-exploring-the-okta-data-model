@@ -28,7 +28,7 @@
     },
     {
       "title": "Update the Request Body",
-      "description": "## Update the Request Body\n\nThe `Profile` object in this request only includes the four profile attributes that are required by default on Okta. We can include additional optional attributes as well!\n\nWe're going to update the `Profile` object's default attributes and add some optional ones as well. The `Credentials` object will be left unchanged:\n\n```json\n{\n  \"profile\": {\n  \"firstName\": \"Samus\",\n  \"lastName\": \"Aran\",\n  \"email\": \"samus.aran@{{email-suffix}}\",\n  \"login\": \"samus.aran@{{email-suffix}}\",\n  \"nickName\": \"Sammy\",\n  \"title\": \"Senior Security Engineer\",\n  \"department\": \"IT\",\n  \"division\": \"Colony K-21\"\n},\n\"credentials\": {\n    \"password\" : { \"value\": \"{{password}}\" }\n  }\n}\n```\n\n(You can ignore the **Insert Code** link above and simply copy and paste the JSON into the request body in Postman)"
+      "description": "## Update the Request Body\n\nThe `Profile` object in this request only includes the four profile attributes that are required by default on Okta. We can include additional optional attributes as well!\n\nWe're going to update the `Profile` object's default attributes and add a `nickName` and `userType` attribute. Recall that we created a **Group Rule** in `Lab 1.2` that will automatically add a user with `userType` **customer** to our **Customers** group.\n\nThe `Credentials` object will be left unchanged.\n\nYour updated request body will be:\n\n```json\n{\n  \"profile\": {\n  \"firstName\": \"Samus\",\n  \"lastName\": \"Aran\",\n  \"email\": \"samus.aran@{{email-suffix}}\",\n  \"login\": \"samus.aran@{{email-suffix}}\",\n  \"userType\": \"customer\",\n  \"nickName\": \"Sammy\"\n},\n\"credentials\": {\n    \"password\" : { \"value\": \"{{password}}\" }\n  }\n}\n```\n\n(You can ignore the **Insert Code** link above and simply copy and paste the JSON into the request body in Postman)"
     },
     {
       "title": "Update the `password` Environment Variable",
@@ -40,7 +40,15 @@
     },
     {
       "title": "Examine the Response",
-      "description": "## Examine the Response\n\n1. Click on the `Body` tab in the Response area (bottom half of the Postman window).\n\n2. Notice that the response we get back from Okta is `JSON`\n\n3. The first entry is the User's unique `id`.\n\n4. The user has a status of `ACTIVE`\n\n5. If you scroll down, you will find the `Profile` object you specified.\n\n6. You will also see a `Credentials` object, but the password is not echoed back.\n\n7. Finally, the `_links` section exposes additional Okta Users API endpoints relevant to this user's lifecycle.\n"
+      "description": "## Examine the Response\n\n1. Click on the `Body` tab in the Response area (bottom half of the Postman window).\n\n2. Notice that the response we get back from Okta is `JSON`\n\n3. The first entry is the User's unique `id`.\n\n4. The user has a status of `ACTIVE`\n\n5. If you scroll down, you will find the `Profile` object you specified.\n\n6. You will also see a `Credentials` object, but the password is not echoed back.\n\n7. Finally, the `_links` section exposes additional Okta Users API endpoints relevant to this user's lifecycle. Notice that all of these links have the user's `id` as a URI parameter in them.\n"
+    },
+    {
+      "title": "Set the `userId` Environment Variable",
+      "description": "## Set the `userId` Environment Variable\n\nYou just saw that some API endpoints require a user's `id` as a URI parameter. Next, we're going to call an endpoint that will list all the Groups a user is a member of.\n\nWe'll store the `id` in the `userId` environment variable:\n\n1. Scroll back to the top of the response body.\n\n2. Highlight the value to the right of the first `id` entry (excluding the quotes).\n\n3. Right click on the highlighted value.\n\n4. Select `Set` and then `userId`"
+    },
+    {
+      "title": "Get Groups for User",
+      "description": "## Get Groups for User\n\n1. In the `Users (Okta API)` collection, click on the `Get Groups for User` request to open it.\n\n2. Notice that this endpoint uses the `{{userId}}` environment variable, which will pass in our user's `id` as a URI parameter.\n\n3. Notice that the HTTP method used for this request is `GET`. We're requesting information about this user.\n\n4. Click `Send` to send the request. You should get a `200 OK` response. If not, ensure you have correctly set the `userId` environment variable.\n\n5. Examine the reponse body. The first entry in the JSON data should be the **Everyone** group. \n\n6. Scroll down to locate the second entry in the JSON data, which should be the **Customers** group."
     },
     {
       "title": "Lab Checkpoint",
