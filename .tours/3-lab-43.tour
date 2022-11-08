@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "#3 Lab 4.3 Modify an Okta User via the Users API",
+  "title": "#3 - Lab 4.3 Modify an Okta User via the Users API",
   "steps": [
     {
       "title": "Lab Overview",

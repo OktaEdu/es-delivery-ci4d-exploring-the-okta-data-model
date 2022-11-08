@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "# Lab 4.1: Get an API token and set up the Postman Environment\n\n🎯 Objective: Create an Okta service account for administrative tasks and associations with API tokens. Set up the Postman environment to make API requests to Okta.\n\n⏱️ Duration: 15 min"
+      "description": "## Lab 4.1: Get an API token and set up the Postman Environment\n\n🎯 Objective: Create an Okta service account for administrative tasks and associations with API tokens. Set up the Postman environment to make API requests to Okta.\n\n⏱️ Duration: 15 min"
     },
     {
       "title": "Create an Okta Service Account",
@@ -29,15 +29,15 @@
     },
     {
       "title": "Rename the Postman Environment",
-      "description": "## ✅ Checkpoint\n\nAt this point, Postman is now configured to make API calls to Okta. In the next lab, you will import the Okta Users API Collection. A collection is a group of saved API requests. "
+      "description": "## Rename the Postman Environment\n\n1.\tAt the top of the Postman window, there's a drop down that says `No Environment` Click this drop down and select the environment you just imported:  `${yourOktaDomain}`\n\n2.\tClick the eyeball icon next to the environment name.\n\n3.\tClick `Edit`.\n\n4.\tRename the environment `oktaice########.oktapreview.com`, replacing `########` with your unique Okta org number."
     },
     {
       "title": "Configure the Postman Environment Variables",
-      "description": "## ✅ Checkpoint\n\nAt this point, Postman is now configured to make API calls to Okta. In the next lab, you will import the Okta Users API Collection. A collection is a group of saved API requests. "
+      "description": "## Configure the Postman Environment Variables\n\nIn the next steps, you will define certain environment variables so that you can make calls to the Core Okta API in the next lab. When defining varialbles, update the CURRENT VALUE column."
     },
     {
       "title": "Configure the `url` Environment Variable",
-      "description": "## Configure the `url` Environment Variable\n\nUpdate the `CURRENT VALUE` of `url` to your Okta org's url, e.g. `http://oktaice###.oktapreview.com`"
+      "description": "## Configure the `url` Environment Variable\n\nUpdate the `CURRENT VALUE` of `url` to your Okta org's url, e.g. `http://oktaice########.oktapreview.com`"
     },
     {
       "file": "postman-api-token.txt",
