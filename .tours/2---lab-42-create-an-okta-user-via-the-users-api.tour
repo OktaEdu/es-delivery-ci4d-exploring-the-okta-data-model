@@ -8,11 +8,11 @@
     },
     {
       "title": "Import the Okta Users API Collection Into Postman",
-      "description": "## Import the Okta Users API Collection Into Postman\n\n1. Within the Chrome browser in your VM, visit https://developer.okta.com/docs/reference/api/users/\n\n2. Click `Run in Postman`\n\n3. Click `Postman for Windows`\n\n4. If prompted, click `Open Postman`\n\n5. In the **Import Collection** window that opens in Postman, choose `My Workspace`\n\nYou should now see the **Users (Okta API)** collection under **Collections**"
+      "description": "## Import the Okta Users API Collection Into Postman\n\n1. Within the Chrome browser in your VM, visit https://developer.okta.com/docs/reference/api/users/\n\n2. Click `Run in Postman`\n\n3. Click `Postman for Windows`\n\n4. If prompted, click `Open Postman`\n\n5. After a moment, you should see a toast notification saying that the **Users (Okta API)** collection was successfully imported.\n\n6. Click on the `Collections` tab and you  should now see the **Users (Okta API)** collection with 42 requests."
     },
     {
       "title": "Open the Create Activated User with Password Request",
-      "description": "## Open the `Create Activated User with Password` Request\n\n1. Click on the **Users (Okta API)** collection to expand it.\n\n2. Click on the **Create Users** subfolder to expand it.\n\n3. Click on the **Create Activated User with Password** request to open it in a tab."
+      "description": "## Open the `Create Activated User with Password` Request\n\n1. Click on the **Users (Okta API)** collection to expand it.\n\n2. Click on the **Create User** subfolder to expand it.\n\n3. Click on the **Create Activated User with Password** request to open it in a tab."
     },
     {
       "title": "Examine the Request Params",
@@ -32,7 +32,7 @@
     },
     {
       "title": "Update the `password` Environment Variable",
-      "description": "\n## Set the `password` Environment Variable\n\n1. Click the eyeball icon to the right of your Postman environment drop down.\n\n2. Click `Edit` \n\n3. Scroll down to the `password` variable and enter `Tra!nme4321` in the `CURRENT VALUE` column.\n\n4. Click `Persist All` and then `Save`\n\n5. Close the Environment variable tab and return to the **Create Activated User with Password** request tab."
+      "description": "\n## Set the `password` Environment Variable\n\n1. Click the eyeball icon to the right of your Postman environment drop down.\n\n2. Click `Edit` \n\n3. Scroll down to the `password` variable and enter `Tra!nme4321` in the `CURRENT VALUE` column.\n\n4. Click `Persist All` and then scroll down and click `Update`\n\n5. Close the Environment variable tab and return to the **Create Activated User with Password** request tab."
     },
     {
       "title": "Send the Request",
@@ -44,7 +44,7 @@
     },
     {
       "title": "Set the `userId` Environment Variable",
-      "description": "## Set the `userId` Environment Variable\n\nYou just saw that some API endpoints require a user's `id` as a URI parameter. Next, we're going to call an endpoint that will list all the Groups a user is a member of.\n\nWe'll store the `id` in the `userId` environment variable:\n\n1. Scroll back to the top of the response body.\n\n2. Highlight the value to the right of the first `id` entry (excluding the quotes).\n\n3. Right click on the highlighted value.\n\n4. Select `Set` and then `userId`"
+      "description": "## Set the `userId` Environment Variable\n\nYou just saw that some API endpoints require a user's `id` as a URI parameter. Next, we're going to call an endpoint that will list all the Groups a user is a member of.\n\nWe'll store the `id` in the `userId` environment variable:\n\n1. Scroll back to the top of the response body.\n\n2. Highlight the value to the right of the first `id` entry (excluding the quotes).\n\n3. Right click on the highlighted value.\n\n4. Select `Set: {environment name}` and then `userId`"
     },
     {
       "title": "Get Groups for User",

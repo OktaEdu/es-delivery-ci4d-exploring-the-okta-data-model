@@ -49,8 +49,8 @@
       "description": "## Configure the `email-suffix` Environment Variable\n\nEnter `okta-ice.com` in in the `CURRENT VALUE` column for the `email-suffix` variable."
     },
     {
-      "title": "Persist and Save All Environment Variables",
-      "description": "## Persist and Save all Environment Variables\n\n1. Click `Persist All`\n\n2. Click `Save`\n\n3. You may now close the environment variable tab."
+      "title": "Persist and Update All Environment Variables",
+      "description": "## Persist and Update all Environment Variables\n\n1. Click `Persist All`\n\n2. Scroll down and click `Update`\n\n3. You may now close the environment variable tab."
     },
     {
       "title": "Lab Checkpoint",

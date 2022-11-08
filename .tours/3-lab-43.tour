@@ -12,7 +12,7 @@
     },
     {
       "title": "Create the Request",
-      "description": "## Create the Request\n\n1. In Postman, click `New` or hold `CTRL` + `N`\n\n2. In the window that pops up, click `HTTP REQUEST`\n\n3. Click the drop down menu and change the HTTP method from `GET` to `POST`\n\n4. For the request URL, enter `{{url}}/api/v1/users/{{userId}}`\n\n5. Click `Save`\n\n6. Name this request `Update User`\n\n7. Ensure the `Users (Okta API)` collection is selected\n\n8. Click `Save`"
+      "description": "## Create the Request\n\n1. In Postman, click the big orange `+ New` button.\n\n2. In the window that pops up, click `HTTP REQUEST`\n\n3. Enter `Update User` as the **Request name**\n\n4. Select `Users (Okta API)` in the **Select a collection or folder to save to**  section.\n\n5. Click `Save to Users (Okta API)` \n\n6. In the new request tab that opens, click the drop down menu and change the HTTP method from `GET` to `POST`\n\n7. For the request URL, enter `{{url}}/api/v1/users/{{userId}}`\n\n8. Click `Save`"
     },
     {
       "title": "Set the Authorization Header",
@@ -24,7 +24,7 @@
     },
     {
       "title": "Create the Request Body JSON Payload",
-      "description": "## Create the Request Body JSON Payload\n\nIn order to update the User, we'll need to craft a JSON payload that specifies what profile attributes need to be updated. \n\nIn this case, we can imagine that the user's `lastName` needs to be updated. Since we are performing a partial update, we only need to specify this attribute in the Profile object of our JSON payload:\n\n```json\n{\n  \"profile\": {\n  \"lastName\": \"Nara\"\n}\n}\n```\n\nClick `Save` and then `Send` to issue the request."
+      "description": "## Create the Request Body JSON Payload\n\nIn order to update the User, we'll need to craft a JSON payload that specifies what profile attributes need to be updated. \n\nIn this case, we can imagine that the user's `lastName` needs to be updated. Since we are performing a partial update, we only need to specify this attribute in the Profile object of our JSON payload:\n\n```json\n{\n  \"profile\": {\n  \"lastName\": \"Nara\"\n}\n}\n```\n\n**Ignore the Insert code link above**\n\n\nClick `Save` and then `Send` to issue the request.\n\n"
     },
     {
       "title": "Examine the Response Body",
