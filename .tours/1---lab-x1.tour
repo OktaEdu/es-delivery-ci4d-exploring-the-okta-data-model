@@ -20,7 +20,7 @@
     },
     {
       "file": "postman-api-token.txt",
-      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`\n\n3. On the `Tokens` tab, click `Create Token`\n\n4. Enter `Postman` as the token name and click `Create Token`\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value into the `postman-api-token.txt` file that is open above.\n\n7. Click [here](command:workbench.action.files.save) to save the text file. \n",
+      "description": "## Create an API Token\n\n1. Ensure you are still logged in to the Admin Dashboard as **Okta Service**\n\n2. Navigate to `Security` > `API`\n\n3. On the `Tokens` tab, click `Create Token`\n\n4. Enter `Postman` as the token name and click `Create Token`\n\n5. A token value is generated and displayed in a popup modal. Copy this value by clicking the clipboard button.\n\n6. Paste the value into the `postman-api-token.txt` file that is open above.\n\n7. Click [here](command:workbench.action.files.save) to save the text file. \n\n8. Back in Chrome, click the `OK, got it` button. Once you click this button, you will no longer be able to view the API token through Okta.\n",
       "line": 2
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       "title": "Rename the Postman Environment",
-      "description": "## Rename the Postman Environment\n\n1.\tAt the top of the Postman window, there's a drop down that says `No Environment` Click this drop down and select the environment you just imported:  `${yourOktaDomain}`\n\n2.\tClick the eyeball icon next to the environment name.\n\n3.\tClick `Edit`.\n\n4.\tRename the environment `oktaice########.oktapreview.com`, replacing `########` with your unique Okta org number."
+      "description": "## Rename the Postman Environment\n\n1. At the top of the Postman window, there's a drop down that says `No Environment` Click this drop down and select the environment you just imported:  `${yourOktaDomain}`\n\n2. Click the icon to the right of the environment name (eyeball superimposed over a document).\n\n3. Click `Edit`\n\n4. Rename the environment `oktaice########.oktapreview.com`, replacing `########` with your unique Okta org number."
     },
     {
       "title": "Configure the Postman Environment Variables",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Persist and Update All Environment Variables",
-      "description": "## Persist and Update all Environment Variables\n\n1. Click `Persist All`\n\n2. Scroll down and click `Update`\n\n3. You may now close the environment variable tab."
+      "description": "## Persist and Save all Environment Variables\n\n1. Click `Persist All`\n\n2. Scroll down and click `Save`\n\n3. You may now close the environment variable tab."
     },
     {
       "title": "Lab Checkpoint",
