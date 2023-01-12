@@ -12,7 +12,7 @@
     },
     {
       "title": "Create the Request",
-      "description": "## Create the Request\n\n1. In Postman, click the `New` button.\n\n2. In the window that pops up, click `HTTP REQUEST`\n\n3. In the new request tab that opens, click the drop down menu and change the HTTP method from `GET` to `POST`\n\n4. For the request URL, enter `{{url}}/api/v1/users/{{userId}}`\n\n5. Click the down arrow next to the `Save` button an click `Save As...`\n\n\n6. Enter `Update User` as the **Request name**\n\n7. Select `Users (Okta API)` in the **Select a collection or folder to save to**  section.\n\n8. Click `Save to Users (Okta API)` \n\n9. Click `Save`"
+      "description": "## Create the Request\n\n1. In Postman, click the `New` button.\n\n2. In the window that pops up, click `HTTP REQUEST`\n\n3. In the new request tab that opens, click the drop down menu and change the HTTP method from `GET` to `POST`\n\n4. For the request URL, enter `{{url}}/api/v1/users/{{userId}}`\n\n5. Click the down arrow next to the `Save` button an click `Save As...`\n\n\n6. Enter `Update User` as the **Request name**\n\n7. Select `Users (Okta API)` in the **Select a collection or folder to save to**  section.\n\n9. Click `Save`"
     },
     {
       "title": "Set the Authorization Header",
@@ -24,7 +24,7 @@
     },
     {
       "title": "Create the Request Body JSON Payload",
-      "description": "## Create the Request Body JSON Payload\n\nIn order to update the User, we'll need to craft a JSON payload that specifies what profile attributes need to be updated. \n\nIn this case, we can imagine that the user's `lastName` needs to be updated. Since we are performing a partial update, we only need to specify this attribute in the Profile object of our JSON payload:\n\n```json\n{\n  \"profile\": {\n  \"lastName\": \"Nara\"\n}\n}\n```\n\n**Ignore the Insert code link above**\n\n\nClick `Save` and then `Send` to issue the request.\n\n"
+      "description": "## Create the Request Body JSON Payload\n\nIn order to update the User, we'll need to craft a JSON payload that specifies what profile attributes need to be updated. \n\nIn this case, we can imagine that the user's `lastName` needs to be updated. Since we are performing a partial update, we only need to specify this attribute in the Profile object of our JSON payload:\n\n```json\n{\n  \"profile\": {\n  \"lastName\": \"Nara\"\n  }\n}\n```\n\n1. **Ignore the Insert code link above** and just copy and paste it into the body of your request.\n\n\n2. Click `Save` \n\n3. Click `Send` to issue the request.\n\n"
     },
     {
       "title": "Examine the Response Body",

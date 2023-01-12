@@ -12,7 +12,7 @@
     },
     {
       "title": "Assign Administrator Permissions",
-      "description": "## Assign Administrator Permissions\n\n1. Navigate to `Security` > `Administrators`\n\n2. Click `Add Administrator`\n\n3. In the `Admin` field, type and select the user `Okta Service`\n\n4. In the `Role` field, select `Super Administrator`\n\n5. Click `Save Changes`"
+      "description": "## Assign Administrator Permissions\n\n1. Navigate to `Security` > `Administrators`\n\n2. Click `Add Administrator`\n\n3. In the `Admin` field, type and select the user `Okta Service` \n\n4. In the `Role` field, select `Super Administrator` -- If you are unable to select this role, refresh the page and repeat Step 3.\n\n5. Click `Save Changes`"
     },
     {
       "title": "Sign In to Service Account",
@@ -25,11 +25,11 @@
     },
     {
       "title": "Import the Postman Environment",
-      "description": "## Import the Postman Environment\n\n1. In the VM, launch the Postman app (an orange circular icon).\n\n2. Click the `Import` button on the top left of the application.\n\n3. Click `Link`.\n\n4. Paste the URL `https://developer.okta.com/docs/api/postman/example.oktapreview.com.environment`\n\n5. Click `Continue` and then `Import` to confirm."
+      "description": "## Import the Postman Environment\n\n1. In the VM, launch the Postman app (an orange circular icon) from the taskbar of your VM.\n\n2. Click the `Import` button on the top left of the application.\n\n3. Click `Link`.\n\n4. Paste the URL https://developer.okta.com/docs/api/postman/example.oktapreview.com.environment\n\n5. Click `Continue` and then `Import` to confirm."
     },
     {
       "title": "Rename the Postman Environment",
-      "description": "## Rename the Postman Environment\n\n1. At the top of the Postman window, there's a drop down that says `No Environment` Click this drop down and select the environment you just imported:  `${yourOktaDomain}`\n\n2. Click the icon to the right of the environment name (eyeball superimposed over a document).\n\n3. Click `Edit`\n\n4. Rename the environment `oktaice########.oktapreview.com`, replacing `########` with your unique Okta org number."
+      "description": "## Rename the Postman Environment\n\n1. At the top of the Postman window, there's a drop down that says `No Environment` Click this drop down and select the environment you just imported:  `${yourOktaDomain}`\n\n2. Click the icon to the right of the environment name (eyeball superimposed over a document).\n\n3. Click `Edit`\n\n4. Click the pencil icon next to the environment name `${yourOktaDomain}`\n\n4. Rename the environment `oktaice########.oktapreview.com`, replacing `########` with your unique Okta org number.\nRecall that you can easily get this information from the **Credentials**  panel of your VM.\n\n5. Press the `Enter` key to set your environment's new name."
     },
     {
       "title": "Configure the Postman Environment Variables",
@@ -46,10 +46,10 @@
     },
     {
       "title": "Configure the `email-suffix` Environment Variable",
-      "description": "## Configure the `email-suffix` Environment Variable\n\nEnter `okta-ice.com` in in the `CURRENT VALUE` column for the `email-suffix` variable."
+      "description": "## Configure the `email-suffix` Environment Variable\n\nEnter `oktaice.com` in in the `CURRENT VALUE` column for the `email-suffix` variable."
     },
     {
-      "title": "Persist and Update All Environment Variables",
+      "title": "Persist and Save All Environment Variables",
       "description": "## Persist and Save all Environment Variables\n\n1. Click `Persist All`\n\n2. Scroll down and click `Save`\n\n3. You may now close the environment variable tab."
     },
     {
