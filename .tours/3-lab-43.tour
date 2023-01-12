@@ -32,7 +32,7 @@
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅ Checkpoint\n\nYou now have an understanding of how a partial update of a user's profile is performed by the Users API, which is used by Okta's Management SDKs.\n\n## 🎉 End of Module 4 Labs\n**You may close this workspace project, ensuring all changes were saved.**"
+      "description": "## ✅ Checkpoint\n\nYou now have an understanding of how a partial update of a user's profile is performed by the Users API, which is used by Okta's Management SDKs.\n\n## 🎉 End of Module 4 Labs\n**You may close this workspace project, ensuring all changes were saved.** You can also close Postman."
     }
   ]
 }
