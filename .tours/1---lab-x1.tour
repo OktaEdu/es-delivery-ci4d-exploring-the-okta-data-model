@@ -37,7 +37,7 @@
     },
     {
       "title": "Configure the `url` Environment Variable",
-      "description": "## Configure the `url` Environment Variable\n\nUpdate the `CURRENT VALUE` of `url` to your Okta org's url, e.g. `http://oktaice########.oktapreview.com`"
+      "description": "## Configure the `url` Environment Variable\n\nUpdate the `CURRENT VALUE` of `url` to your Okta org's url, e.g. `https://oktaice########.oktapreview.com`"
     },
     {
       "file": "postman-api-token.txt",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Persist and Save All Environment Variables",
-      "description": "## Persist and Save all Environment Variables\n\n1. Click `Persist All`\n\n2. Scroll down and click `Save`\n\n3. You may now close the environment variable tab."
+      "description": "## Persist and Save all Environment Variables\n\n1. Click `Persist All`\n\n2. Click `Save`\n\n3. You may now close the environment variable tab."
     },
     {
       "title": "Lab Checkpoint",

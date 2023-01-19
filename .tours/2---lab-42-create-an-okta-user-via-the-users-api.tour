@@ -32,7 +32,7 @@
     },
     {
       "title": "Update the `password` Environment Variable",
-      "description": "## Update the `password` Environment Variable\n\n1. Click the eyeball icon to the right of your Postman environment drop down.\n\n2. Click `Edit` \n\n3. Scroll down to the `password` variable and enter `Tra!nme4321` in the `CURRENT VALUE` column.\n\n4. Click `Persist All` and then scroll down and click `Update`\n\n5. Close the Environment variable tab and return to the **Create Activated User with Password** request tab."
+      "description": "## Update the `password` Environment Variable\n\n1. Click the eyeball icon to the right of your Postman environment drop down.\n\n2. Click `Edit` \n\n3. Scroll down to the `password` variable and enter `Tra!nme4321` in the `CURRENT VALUE` column.\n\n4. Click `Persist All` and then and click `Save`\n\n5. Close the Environment variable tab and return to the **Create Activated User with Password** request tab."
     },
     {
       "title": "Send the Request",
