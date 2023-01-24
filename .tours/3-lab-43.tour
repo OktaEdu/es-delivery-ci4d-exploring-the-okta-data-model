@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 4.3: Update an Okta User Via the Users API\n\n🎯 Objective: Update an existing Okta User using a request from the Okta Users API collection in Postman.\n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisite: Lab 4.2"
+      "description": "## Lab 4.3: Update an Okta User Via the Users API\n\n🎯 Objective: Update an existing Okta User using a request from the Okta Users API collection in Postman.\n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisites: Labs 4.1 and 4.2"
     },
     {
       "title": "Access Okta's Users API Documentation",
