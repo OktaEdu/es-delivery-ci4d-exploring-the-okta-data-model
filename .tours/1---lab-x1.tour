@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 4.1: Get an API token and set up the Postman Environment\n\n🎯 Objective: Create an Okta service account for administrative tasks and associations with API tokens. Set up the Postman environment to make API requests to Okta.\n\n⏱️ Duration: 15 min"
+      "description": "## Lab 4.1: Get an API token and set up the Postman Environment\n\n**📝 Note: In order to import collections and environments, you must log in to the Postman application. If you do not already have an account, you can register for free at https://www.postman.com/**\n\n🎯 Objective: Create an Okta service account for administrative tasks and associations with API tokens. Set up the Postman environment to make API requests to Okta.\n\n⏱️ Duration: 15 min"
     },
     {
       "title": "Create an Okta Service Account",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Import the Postman Environment",
-      "description": "## Import the Postman Environment\n\n1. In the VM, launch the Postman app (an orange circular icon) from the taskbar of your VM.\n\n2. Click the `Import` button on the top left of the application.\n\n3. Click `Link`.\n\n4. Paste the URL https://developer.okta.com/docs/api/postman/example.oktapreview.com.environment\n\n5. Click `Continue` and then `Import` to confirm."
+      "description": "## Import the Postman Environment\n\n1. In the VM, launch the Postman app (an orange circular icon) from the taskbar of your VM.\n\n2. Sign into Postman using your own credentials. You can do this by clicking `Sign In` in the top right corner of the application. \n\n2. Click the `Import` button on the top left of the application.\n\n3. Click `Link`.\n\n4. Paste the URL https://developer.okta.com/docs/api/postman/example.oktapreview.com.environment\n\n5. Click `Continue` and then `Import` to confirm."
     },
     {
       "title": "Rename the Postman Environment",
