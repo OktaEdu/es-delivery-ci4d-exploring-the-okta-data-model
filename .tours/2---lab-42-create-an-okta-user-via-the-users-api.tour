@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 4.2: Create an Okta User via the Users API\n\n🎯 Objective: Import the Okta Users API collection into Postman and create an Okta user via API request.\n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisite: Lab 4.1"
+      "description": "## Lab 4.2: Create an Okta User via the Users API\n\n**📝 Note: In order to import collections and environments, you must log in to the Postman application. If you do not already have an account, you can register for free at https://www.postman.com/**\n\n🎯 Objective: Import the Okta Users API collection into Postman and create an Okta user via API request.\n\n⏱️ Duration: 15 min\n\n⚠️ Prerequisite: Lab 4.1\n\n"
     },
     {
       "title": "Import the Okta Users API Collection Into Postman",
